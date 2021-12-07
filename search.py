@@ -10,7 +10,7 @@ from tensorboardX import SummaryWriter
 from copy import deepcopy
 
 @click.command()
-@click.option('--config', '-cfg', required=True, hep='Provide the config files.')
+@click.option('--config', '-cfg', required=True, help='Provide the config files.')
 @click.option('--summary_writer', '-sw', is_flag=True, help='Use summary writer to log graphs.')
 @click.option('--console_log', is_flag=True, help='Log output to the console.')
 @click.option("--loops_if_rand", type=int, default=10, help="Total runs for evaluation.")
